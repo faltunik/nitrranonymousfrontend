@@ -1,0 +1,24 @@
+import React, {useContext} from 'react';
+import AuthContext from '../context/AuthContext';
+
+
+
+export default function Register() {
+    let {registerUser} = useContext(AuthContext)
+    return (
+        <div>
+            <h1>Register Page</h1>
+            <div>
+            <form onSubmit={registerUser} >
+                {/* why arrow function or just loginuser, problem with loginUser() */}
+                <input type="text" name="username" placeholder="Enter Username" />
+                <input type="email" name="email" placeholder="Enter Email" />
+                <input type="password" name="password" placeholder="Enter Password" />
+                <input type="password" name="confirmpassword" placeholder="Re-Enter Your Password" />
+                <input type="submit"/>
+            </form>
+        </div>
+            
+        </div>
+    )
+}
