@@ -164,7 +164,10 @@ export const PostProvider = ({children}) => {
         try{
             let formData = new FormData()
             formData.append('content', postfield)
-            formData.append('image', postimg)
+            if (postimg) {
+                formData.append('image', postimg)
+            }
+            
             let response = await api.post('/post/post/', formData)
             console.log(response.data)
             console.log(typeof(response.data))
