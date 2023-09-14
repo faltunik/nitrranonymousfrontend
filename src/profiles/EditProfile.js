@@ -59,7 +59,7 @@ export default function EditProfile({api, profile}) {
   //         console.log(response.data)
   //         console.log(typeof(response.data))
   //         console.log(response.data.image)
-  //         const newurl = `http://nitrr-anon.azurewebsites.net${response.data.image}`
+  //         const newurl = `https://nitrr-anon.azurewebsites.net${response.data.image}`
   //         response.data.image = newurl
   //         console.log(typeof(response.data.image))
           
