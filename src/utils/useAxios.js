@@ -5,7 +5,7 @@ import { useContext } from 'react'
 import AuthContext from '../context/AuthContext'
 
 
-const baseURL = 'http://nitrr-anon.azurewebsites.net'
+const baseURL = 'https://nitrr-anon.azurewebsites.net'
 
 const useAxios = () => {
     const {chauToken, setUser, setChauToken} = useContext(AuthContext)

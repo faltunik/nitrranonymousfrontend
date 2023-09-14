@@ -22,7 +22,7 @@ export  const AuthProvider = ({children}) => {
     let loginUser = async (e)=> {
         e.preventDefault() // preventing page from reload
         // sending data and getting repsonse
-        let response = await fetch('http://nitrr-anon.azurewebsites.net/token/', {
+        let response = await fetch('https://nitrr-anon.azurewebsites.net/token/', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -60,7 +60,7 @@ export  const AuthProvider = ({children}) => {
 
     let registerUser = async (e) => {
         e.preventDefault()
-        let url = 'http://nitrr-anon.azurewebsites.net/users/';
+        let url = 'https://nitrr-anon.azurewebsites.net/users/';
         let secretdata={
             'username':e.target.username.value,
             'email': e.target.email.value,
